@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap&subset=latin-ext');
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+h1{
+	font-family: 'Abril Fatface', cursive;
+}
+nav{
+	padding: 0px !important;
+}
+.navbar-brand img{
+	width: 100px;
+}
+.navbar-light .navbar-nav .nav-link {
+        color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    font-weight: 600;
+  }
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    color: rgb(180, 31, 37);
+}
+.btn-custom{
+	background-color: #b81f25;
+	color: #fff !important;
+	border-radius: 30px; 
+	padding-left: 30px !important;
+	padding-right: 30px !important; 
+	border: 1px solid #b81f25;
+	 transition: 0.4s cubic-bezier(0.4, 0, 1, 1);
+}
+.btn-custom:hover{
+	background-color: transparent;
+	color: #b81f25 !important;
+}
+ 
+
+.banner{
+	background-image: url(../images/banner-2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #626565;
+    background-blend-mode: multiply;
+    color: #fff;
+    text-align: center;
+
+}
+.banner .row{
+	min-height: 85vh;
+}
+
+.banner-btn{
+	animation-name: up-down;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes up-down{
+	0%{
+		transform: translateY(0);
+	}
+	50%{
+		transform: translateY(50px);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+
+.banner-btn a{
+	
+	color: #fff !important;
+	border-radius: 30px; 
+	padding-left: 30px !important;
+	padding-right: 30px !important; 
+	border: 1px solid #fff;
+	position: relative;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.banner-btn li{
+	padding: 0 10px;
+	margin-top: 40px;
+}
+
+.banner-btn a:hover{
+	background-color: #fff;
+	color: #000 !important;
+	transition: 0.4s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.banner-btn a::before{
+content: "";
+position: absolute;
+border: 0.7px solid #fff;
+width: 100%;
+height: 100%;
+border-radius: 30px; 
+bottom:3px;
+left: 1px;
+}
+
+.banner-btn a:hover::before{
+	border: transparent;
+}
+
+.banner h1{
+    font-size: 70px;
+}
+
+.banner h3{font-family: 'Abril Fatface', cursive;color: #DB9323;font-size: 25px;}
+
+.modal-content {
+  
+    background-color: #5f1013;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 0.5rem;
+    color: #fff;
+}
+
+.about-bbq-section{
+	padding: 100px 0;
+}
+.shadow{
+	box-shadow: 0 9px 18px #716a6ad1 !important;
+}
+
+.about-bbq{
+    text-align: center;
+}
+.about-bbq h1{
+    color: #DB9423;
+}
+.about-bbq h4{
+    font-size: 20px;
+    font-weight: 300;
+    padding: 13px 0;
+    letter-spacing: 6px;
+}
+.about-bbq p{
+    font-weight: 300;
+    padding-bottom: 50px;
+}
+.about-bbq span{
+    font-weight: 600;
+    display: block;
+    padding: 10px 0;
+}
+.about-bbq a{
+	color: #db9423 !important;
+    border-radius: 30px;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    border: 1px solid #db9423;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.about-bbq a::before{
+content: "";
+position: absolute;
+border: 1px solid #db9423;
+width: 100%;
+height: 100%;
+border-radius: 30px; 
+bottom:3px;
+left: 1px;
+}
+.client{
+	padding: 100px 0 !important;
+}
+.logo-size{
+	
+width: 100px;
+}
+.Featured{
+    font-size: 27px;
+}
+
+.feature-section{
+	background-image: url(../images/meat-1155132_640.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #45474a;
+	background-blend-mode: multiply;
+	text-align: center;
+	color: #fff;
+}
+.feature-section .row{
+	height: 60vh;
+}
+.feature-section h1{
+	color: #DB9323;
+}
+.feature-section h6{
+	letter-spacing: 5px;
+	padding: 20px;
+}
+.feature-section p{
+    font-weight: 100;
+}
+
+.menu-section{
+	padding: 100px 0 ;
+
+}
+ .menu-section h3{}
+ .menu-section h2{}
+ .menu-section p{}
+ .menu-section img{}
+ .menu-section .col-xl-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 45px;
+}
+
+
+
+.happy-hour {
+    background-image: url(../images/friends.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    background-color: #403d3d;
+    background-blend-mode: multiply;
+    text-align: center;
+}
+.happy-hour .row{
+	height: 60vh;
+}
+.happy-hour h4{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 21px;
+}
+.happy-hour h1{
+    color: #db9323;
+}
+.happy-hour p{}
+.happy-hour a{
+	color: #db9423 !important;
+    border-radius: 30px;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    border: 1px solid #db9423;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.happy-hour a::before{
+content: "";
+position: absolute;
+border: 1px solid #db9423;
+width: 100%;
+height: 100%;
+border-radius: 30px; 
+bottom:3px;
+left: 1px;
+}
+
+.feedback-section .row{
+	justify-content: center !important;
+    text-align: center !important;
+}
+
+.feedback-section{
+	padding: 80px 0;
+}
+.feedback-section h1{
+ 
+}
+.feedback-section p{
+    padding: 50px 0;
+}
+.feedback-section img{
+	width: 100px;
+}
+
+.footer{
+	 background-image: url(../images/restaurant.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    background-color: #403d3d;
+    background-blend-mode: multiply;
+    text-align: center;
+}
+.footer .row{
+	height: 80vh;
+}
+
+.footer h1{
+	padding: 20px 0;
+}
+.footer h5{
+	font-family:'Abril Fatface', cursive;
+	padding-top: 20px; 
+}
+.footer a{
+	color: #db9423 !important;
+    border-radius: 30px;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    border: 1px solid #db9423;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.footer a::before{
+content: "";
+position: absolute;
+border: 1px solid #db9423;
+width: 100%;
+height: 100%;
+border-radius: 30px; 
+bottom:3px;
+left: 1px;
+}
+
+
+
